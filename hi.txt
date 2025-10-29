@@ -2,3 +2,18 @@ hi
 bye se ya
 when r u coming
 I am a donkey
+git init
+echo "Hello world" > "hi there.txt"
+echo "What's up" > "whats up.txt"
+git add .
+git commit -m "Initial commit with two files"
+git branch new-branch
+git checkout new-branch
+echo "Hello from new-branch" > "hi there.txt"
+git add hi\ there.txt
+git commit -m "Updated hi there.txt in new-branch"
+git checkout master
+echo "Hello from master branch" > "hi there.txt"
+git add hi\ there.txt
+git commit -m "Updated hi there.txt in master"
+git merge new-branch
